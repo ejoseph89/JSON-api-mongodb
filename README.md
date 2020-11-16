@@ -4,7 +4,7 @@ By Emil Joseph
 
 ## Attributions
 
-Instructor's starter code (import.js) and in-class examples.
+Instructor's starter code (import.js) and in-class examples (server.js).
 
 ## Links
 
@@ -23,3 +23,8 @@ Instructor's starter code (import.js) and in-class examples.
   - EDIT: Works, after using code from instructor's `sample-code/backend/mongoose/definitions/server.js`
 
 ## Comments
+
+- I have picked 10 pictures from my instagram accound, and used their url in `photos.js` in the `seeds` folder.
+- If you add `/api/v0/photos` after the [Heroku]() url (no spaces), the page will return an array of JSON objects with details (set in `photo.js` in `models` folder) of these 10 pictures.
+- If you add `/api/v0/photos` followed by a `/` and any number betwee 1 - 10, it'll return a JSOM object that represents an individual photo.
+  - For example, to get the 5th photo, you'd type `/api/v0/photos/5` after the [Heroku]() url.
