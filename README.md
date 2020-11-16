@@ -28,3 +28,4 @@ Instructor's starter code (import.js) and in-class examples (server.js).
 - If you add `/api/v0/photos` after the [Heroku]() url (no spaces), the page will return an array of JSON objects with details (set in `photo.js` in `models` folder) of these 10 pictures.
 - If you add `/api/v0/photos` followed by a `/` and any number betwee 1 - 10, it'll return a JSOM object that represents an individual photo.
   - For example, to get the 5th photo, you'd type `/api/v0/photos/5` after the [Heroku]() url.
+- I would like to expand on this project, and set it up in a way that I can use this as my photography portfolio.
