@@ -34,14 +34,15 @@ app.get('/api/v0/photos', (req, res) => {
 
 // JSON endpoint - gets single object based on id - does not work 
 app.get('/api/v0/photos/:id', (req, res) => {
-  Photo.findOne({ id: req.params.id }, (err, result) => {
-    if ((err) || (result == null)) {
-      res.send('No match found');
+  Photo.findOne({id: req.params.id}, (err, result) => {
+    if (err) {
+      console.log(err);
     } else {
       res.json(result);
     }
   });
 });
+    
 
 // Error message
 app.use((req, res) => {
