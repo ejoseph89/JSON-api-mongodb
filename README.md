@@ -14,7 +14,7 @@ Instructor's starter code (import.js) and in-class examples.
 ## Project overview
 
 - Returning JSON objects
-  - Objects returned are links to individual pictures (10) from my perosnal instagram page
+  - Objects returned are links to individual pictures (10) from my personal instagram page
   - Each image has `id, location, description, and location` attributes
 - Data imported to MongoDB Atlas using the provided `import.js` script
 - objects are named `photos`
