@@ -4,7 +4,6 @@ By Emil Joseph
 
 ## Attributions
 
-All images from [unsplash](https://unsplash.com/s/photos/cannabis-thc-cbd).  
 Instructor's starter code (import.js) and in-class examples.
 
 ## Links
