@@ -20,5 +20,6 @@ Instructor's starter code (import.js) and in-class examples.
 - objects are named `photos`
 - `/api/v0/photos` returns an array of objects
 - `/api/v0/photos/:id` fails to return anything at the moment
+  - EDIT: Works, after using code from instructor's `sample-code/backend/mongoose/definitions/server.js`
 
 ## Comments

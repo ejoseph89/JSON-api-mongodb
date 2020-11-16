@@ -32,7 +32,7 @@ app.get('/api/v0/photos', (req, res) => {
     })
 })
 
-// JSON endpoint - gets single object based on id - does not work 
+// JSON endpoint - gets single object based on id - does not work. EDIT: It works now!
 app.get('/api/v0/photos/:id', (req, res) => {
   Photo.findOne({id: req.params.id}, (err, result) => {
     if (err) {
