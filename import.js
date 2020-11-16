@@ -1,0 +1,33 @@
+const mongoose = require('mongoose');
+const dotenv = require('dotenv').config();
+
+// Import seed data
+const dbSeed = require(`./seeds/photos`);
+
+// Define model
+const Photo = require(`./models/photo`);
+
+/*******************************/
+/* Mongoose/MongoDB Connection */
+/*******************************/
+
+mongoose.connect(process.env.DATABASE_URL, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true
+});
+
+var db = mongoose.connection;
+
+db.on('error', function(error){
+  console.log(`Connection Error: ${error.message}`)
+});
+
+db.once('open', function() {
+  console.log('Connected to DB...');
+
+});
+
+Photo.insertMany(dbSeed, function(error, photo) {
+  console.log('Data import completed.')
+  mongoose.connection.close();
+});

@@ -1,0 +1,7 @@
+.env
+node_modules
+route.rest
+
+.DS_Store
+.AppleDouble
+.LSOverride
