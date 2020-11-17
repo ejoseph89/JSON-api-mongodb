@@ -1,4 +1,3 @@
-// 'npm run devStart' to start. Changed the script in package.json
 // Modules, dependencies, and other requirements
 require('dotenv').config();
 const express = require('express');
@@ -20,6 +19,11 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTo
   .catch((err) => {console.log(err)});
 
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.sendFile('./views/index.html', { root: __dirname })
+})
+
 
 // JSON endpoint - gets all objects
 app.get('/api/v0/photos', (req, res) => {
