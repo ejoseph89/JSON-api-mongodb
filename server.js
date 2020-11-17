@@ -18,7 +18,6 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTo
   })
   .catch((err) => {console.log(err)});
 
-app.use(express.json());
 
 app.get('/', (req, res) => {
   res.sendFile('./views/index.html', { root: __dirname });

@@ -4,13 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    flex-grow: 1;
+  }
+
+  header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+  }
+
+  header a:hover {
+    color: #333333;
+  }
+
+  footer {
+    color: #888888;
+    border-top: 1px solid #dddddd;
+    margin-top: 16px;
+    padding: 16px 0;
+  }
+
+  header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+    border-left: 7px solid #dedede;
+    padding-left: 7px;
+  }
+
+  </style>
+
   <title>Home</title>
 </head>
 
 <body>
   <h1>Home</h1>
   <h2>Instagram JSON enpoints</h2>
-  
+  <section class="main-content">
+    <div>
+      <h3>Instructions</h3>
+      <p>Add '/api/v0/photos' after the url (no spaces) to get an array of endpoints </p>
+      <p>Add a number between 1 and 10 after '/api/v0/photos' ( which is to be added after the url (no spaces)) to get an individual endpoint </p>
+    </div>
+
+    <div>
+      Links
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/"></a>All endpoints</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/1"></a>1</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/2"></a>2</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/3"></a>3</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/4"></a>4</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/5"></a>5</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/6"></a>6</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/7"></a>7</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/8"></a>8</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/9"></a>9</p>
+      <p><a href="https://cpnt-262-a5-ej.herokuapp.com/api/v0/photos/10"></a>10</p>
+
+    </div>
+  </section>
+
+  <footer>
+    Created by <p><a href="https://www.instagram.com/emilsfotos/"></a>Emil</p>
+  </footer>
 </body>
 
 </html>
