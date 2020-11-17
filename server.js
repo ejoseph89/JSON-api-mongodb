@@ -2,7 +2,7 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-const Photo = require('./models/photo')
+const Photo = require('./models/photo');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -21,9 +21,8 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTo
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.sendFile('./views/index.html', { root: __dirname })
-})
-
+  res.sendFile('./views/index.html', { root: __dirname });
+});
 
 // JSON endpoint - gets all objects
 app.get('/api/v0/photos', (req, res) => {
@@ -34,7 +33,7 @@ app.get('/api/v0/photos', (req, res) => {
     .catch((err) => {
       res.status(500).send({message: err.message})
     })
-})
+});
 
 // JSON endpoint - gets single object based on id - does not work. EDIT: It works now!
 app.get('/api/v0/photos/:id', (req, res) => {
@@ -51,4 +50,4 @@ app.get('/api/v0/photos/:id', (req, res) => {
 // Error message
 app.use((req, res) => {
   res.status(404).send('404 Error: File not found');
-})
+});

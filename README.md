@@ -9,7 +9,7 @@ Instructor's starter code (import.js) and in-class examples (server.js).
 ## Links
 
 [Github repo](https://github.com/ejoseph89/cpnt262-a5).  
-[Heroku link]().
+[Heroku link](https://cpnt-262-a5-ej.herokuapp.com/).
 
 ## Project overview
 
