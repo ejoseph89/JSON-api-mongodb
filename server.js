@@ -28,7 +28,7 @@ app.get('/api/v0/photos', (req, res) => {
       res.json(photos)
     })
     .catch((err) => {
-      res.status(500).json({message: err.message})
+      res.status(500).send({message: err.message})
     })
 })
 
