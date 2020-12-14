@@ -1,10 +1,6 @@
-# CPNT262 - Assignment 5: JSON Server with Heroku and MongoDB Atlas
+# JSON api with Heroku and MongoDB Atlas
 
 By Emil Joseph
-
-## Attributions
-
-Instructor's starter code (import.js) and in-class examples (server.js).
 
 ## Links
 
@@ -19,9 +15,7 @@ Instructor's starter code (import.js) and in-class examples (server.js).
 - Data imported to MongoDB Atlas using the provided `import.js` script
 - objects are named `photos`
 - `/api/v0/photos` returns an array of objects
-- `/api/v0/photos/:id` fails to return anything at the moment
-  - EDIT: Works, after using code from instructor's `sample-code/backend/mongoose/definitions/server.js`
-
+- `/api/v0/photos/:id` returns specific objects
 ## Comments
 
 - I have picked 10 pictures from my instagram accound, and used their url in `photos.js` in the `seeds` folder.
